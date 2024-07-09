@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+        body {
+          background-image: url('https://t3.ftcdn.net/jpg/08/59/68/56/240_F_859685640_2yU8lo9ruiAXQsRxiOLgqtAnAH5mdJUj.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+
+<center><img id="myImage" onclick="changeImage()" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180"></center>
+
+<center><p style="color: white;"></p></center>
+<center>
+<h1 style="color: yellow;">About Bulb</h1>
+<h3><p style="color: rgba(59, 255, 41, 0.849);"><br>An electronic bulb is a small and simple light source that uses a wire filament to glow on the application of electricity.<br> The structure of incandescent light bulbs is shown in the figure below.<br> The filament, which is a coiled thin wire, is made of tungsten.</p></h3>
+</center>
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+  } else {
+    image.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+  }
+}
+</script>
+</body>
+</html>
